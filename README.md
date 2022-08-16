@@ -10,4 +10,4 @@ Start time: 2:04
 
 Finish time: 3:30
 
-Actual time needed to complete: _____
+Actual time needed to complete: 4:30, but took about a 30 minute break.
