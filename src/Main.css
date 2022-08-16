@@ -1,0 +1,21 @@
+main{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.animals{
+  width:25vw;
+  padding:1vw;
+  margin:2vw;
+  border:black solid .5vw;
+  font-size: 1vw;
+  text-align: center;
+}
+.animals img{
+  width:10vw;
+  height:10vw;;
+}
+.animals h2{
+  font-size:3vw;
+}
