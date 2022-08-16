@@ -21,7 +21,7 @@ class HornedBeast extends React.Component {
         <img src={this.props.imageUrl} alt={this.props.title} />
         <p>{this.props.description}</p>
         <p>{this.state.favs} ❤️</p>
-        <Button onClick={this.favorite} as="a" variant="primary">Favorite</Button>
+        <Button onClick={this.favorite} as="p" variant="primary">Favorite</Button>
       </div>
     );
   }
