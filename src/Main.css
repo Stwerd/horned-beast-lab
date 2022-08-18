@@ -21,3 +21,9 @@ main{
 .animals h2{
   font-size:3vw;
 }
+
+Form {
+  width: 80%;
+  margin: 0 auto;
+
+}
