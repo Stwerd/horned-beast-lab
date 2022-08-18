@@ -11,3 +11,14 @@ Start time: 2:04
 Finish time: 3:30
 
 Actual time needed to complete: 4:30, but took about a 30 minute break.
+
+
+Number and name of feature: Add a zoomed in modal of the currently selected horned animal
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 1pm
+
+Finish time: 3pm
+
+Actual time needed to complete: 10am next day, about 4 hours
