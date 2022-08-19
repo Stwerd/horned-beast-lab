@@ -15,7 +15,7 @@ class HornedBeast extends React.Component {
     });
   }
   handleImgClick= () => {
-    this.props.temp(this.props.animal);
+    this.props.pusher(this.props.animal);
   }
   render() {
     return (
