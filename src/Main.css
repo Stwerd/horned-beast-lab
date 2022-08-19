@@ -2,6 +2,7 @@ main{
   display:flex;
   flex-wrap: wrap;
   justify-content:space-around;
+  background-color: beige;
 }
 
 .animals{
@@ -14,8 +15,15 @@ main{
 }
 .animals img{
   width:10vw;
-  height:10vw;;
+  height:10vw;
+  margin:auto;
 }
 .animals h2{
   font-size:3vw;
+}
+
+Form {
+  width: 80%;
+  margin: 0 auto;
+
 }
