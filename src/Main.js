@@ -22,7 +22,7 @@ class Main extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    let newData = this.props.data.filter(elm => elm.horns == this.state.value)
+    let newData = this.props.data.filter(elm => parseInt(elm.horns) === parseInt(this.state.value))
     this.setState({ filteredData: newData });
   }
 
@@ -41,6 +41,7 @@ class Main extends React.Component {
             <Form.Group>
               <Form.Label>Selected Numbers</Form.Label>
               <Form.Select style={{width:"20%"}} className="options" name="selected" onChange={this.handleChange}>
+                <option value="all">All</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
