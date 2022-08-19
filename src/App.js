@@ -17,11 +17,10 @@ class App extends React.Component {
     }
   }
 
-  handleShowModal = (animal) => {
-    console.log(animal);
+  handleShowModal = (selectedanimal) => {
     this.setState({
       showModal: true,
-      animal: animal
+      animal: selectedanimal
     });
   }
 
@@ -36,7 +35,7 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <Main data={data} temp={this.handleShowModal} />
+        <Main data={data} pusher={this.handleShowModal} />
         <Footer />
         <SelectedBeast
           animal={this.state.animal}

@@ -22,15 +22,21 @@ class Main extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    let newData = this.props.data.filter(elm => parseInt(elm.horns) === parseInt(this.state.value))
-    this.setState({ filteredData: newData });
+    console.log(this.state.value);
+    if (this.state.value === "all") {
+      this.setState({filteredData: this.props.data})
+    }
+    else {
+      let newData = this.props.data.filter(elm => parseInt(elm.horns) === parseInt(this.state.value))
+      this.setState({ filteredData: newData });
+    }
   }
 
 
   render() {
     let animals = this.state.filteredData.map(element => {
       return <HornedBeast
-        temp={this.props.temp}
+        pusher={this.props.pusher}
         animal={element}
       />
     });
@@ -40,7 +46,7 @@ class Main extends React.Component {
           <legend>Filter by Horns
             <Form.Group>
               <Form.Label>Selected Numbers</Form.Label>
-              <Form.Select style={{width:"20%"}} className="options" name="selected" onChange={this.handleChange}>
+              <Form.Select style={{ width: "20%" }} className="options" name="selected" onChange={this.handleChange}>
                 <option value="all">All</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
